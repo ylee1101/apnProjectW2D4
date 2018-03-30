@@ -71,7 +71,8 @@ export default class App extends React.Component {
     switch (item) {
       case "button":
         return (
-          <View
+          <View 
+            Key={element[3]}
             style={{
               position: "relative",
               justifyContent: "flex-start",
@@ -157,6 +158,7 @@ export default class App extends React.Component {
   titleConfig = {
     title: "APN Project",
     tintColor: "#E6E7E8",
+    style: {fontSize: 30}
     
   };
   // Title text section ends here
